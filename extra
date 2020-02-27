@@ -1,0 +1,5 @@
+kubectl cluster-info
+kubectl get pods
+kubectl describe pods sample-pod 
+kubectl delete pods sample-pod
+

@@ -1,0 +1,16 @@
+apiVersion: extensions/aakash
+kind: Deployment
+metadata:
+  name: sample-deploy
+spec:
+  replicas: 5
+  template:
+   metadata:
+    labels:
+       app: sample-app
+   spec:
+    containers:
+    - name: sample-pod
+      image: aakashdeveloper/test2:latest
+      ports:
+      - containerPort: 80
