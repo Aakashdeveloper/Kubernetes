@@ -2,4 +2,20 @@ kubectl cluster-info
 kubectl get pods
 kubectl describe pods sample-pod 
 kubectl delete pods sample-pod
+kubectl run sise --image= --port=9980
+kubectl create -f abc.yml
 
+
+/*
+apiVersion: v1
+kind: Pod
+metadata:
+  name: react
+spec:
+  containers:
+  - name: Reactapp
+    image: myapp
+    ports:
+    containersPort: 8800
+    imagePullPolicy: Always
+*/
